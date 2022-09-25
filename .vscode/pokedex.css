@@ -13,12 +13,16 @@ ul {
   text-align: center;
 }
 
-/*arranging the pokemon in rows and coloum*/
-.row {
-  display: flex;
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.horizontal {
+  float: left;
+  width: 24%;
+  padding: 5px;
 }
 
-.column {
-  flex: 33.33%;
-  padding: 5px;
+/* Clear floats after image containers */
+.vertical::after {
+  content: "";
+  clear: both;
+  display: table;
 }
