@@ -12,3 +12,13 @@ ul {
 .heading {
   text-align: center;
 }
+
+/*arranging the pokemon in rows and coloum*/
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
