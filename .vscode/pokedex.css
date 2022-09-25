@@ -1,0 +1,14 @@
+/*adding background colour to the body*/
+body {
+  background-color: rgb(166, 205, 232);
+}
+
+/*removing bullet point*/
+ul {
+  list-style: none;
+}
+
+/*aligning the heading to the center*/
+.heading {
+  text-align: center;
+}
