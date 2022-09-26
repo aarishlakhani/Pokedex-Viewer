@@ -143,15 +143,15 @@ const weatherType2 = [
 
 function nameSearch() {
   let pokemonName = document.getElementById("search1").value;
-  let output = "";
-  let count = 0;
+  let result = "";
+  let pokemonCounter = 0;
 
   if (pokemonName.length > 20) {
     alert("Inavalid Search. Please try again.");
   } else {
     for (let i = 0; i < pokemon.length; i++) {
       if (pokemon[i].toLowerCase().includes(pokemonName.toLowerCase())) {
-        output +=
+        result +=
           pokemon[i] +
           " (" +
           i +
@@ -164,33 +164,33 @@ function nameSearch() {
           "|" +
           fastMove2[i] +
           "\n";
-        count++;
+        pokemonCounter++;
       }
 
-      if (count > 4) {
+      if (pokemonCounter > 4) {
         break;
       }
     }
   }
 
-  if (count == 0) {
+  if (pokemonCounter == 0) {
     alert("Try Againn");
   } else {
-    alert(output);
+    alert(result);
   }
 }
 
 function numSearch() {
   let pokemonId = document.getElementById("search2").value;
-  let output = "";
-  let count = 0;
+  let result = "";
+  let pokemonCounter = 0;
 
   if (pokemonId.length > 20) {
     alert("Invalid search. Please try again.");
   } else {
     for (let i = 1; i < pokemon.length; i++) {
       if (num[i].includes(pokemonId)) {
-        output +=
+        result +=
           pokemon[i] +
           " (" +
           num[i] +
@@ -203,18 +203,18 @@ function numSearch() {
           "|" +
           fastMove2[i] +
           "\n";
-        count++;
+        pokemonCounter++;
       }
 
-      if (count > 4) {
+      if (pokemonCounter > 4) {
         break;
       }
     }
 
-    if (count == 0) {
+    if (pokemonCounter == 0) {
       alert("Pokemon with this number does not exist. Try again.");
     } else {
-      alert(output);
+      alert(result);
     }
   }
 }
