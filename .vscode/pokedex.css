@@ -12,12 +12,14 @@ ul {
 .heading {
   text-align: center;
 }
-
+/*Rearanging images side by side using Float*/
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .horizontal {
   float: left;
   width: 24%;
   padding: 5px;
+  border: 4px;
+  border-bottom: solid;
 }
 
 /* Clear floats after image containers */
