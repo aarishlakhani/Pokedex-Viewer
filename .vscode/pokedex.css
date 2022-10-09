@@ -15,7 +15,6 @@ ul {
 /*Rearanging images side by side using Flexbox*/
 .horizontal {
   display: flex;
-  border: 1px solid black;
 }
 
 .vertical {

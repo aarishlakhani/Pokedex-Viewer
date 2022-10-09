@@ -17,17 +17,17 @@
 
     <!--adding a search bar for name and number-->
     <div="searchName">
-        <input type="text" id="search1" placeholder="Pokemon Name" />
+        <input type="text" id="search1" placeholder="Pokemon Name" class="displayName" onkeyup="searchName" onkeypress="checkName(event)"/>
         <button onclick="nameSearch()">Enter</button>
+
       <div="searchNumber">
-        <input type="number" id="search2" placeholder="Pokemon Number" />
+        <input type="number" id="search2" placeholder="Pokemon Number" class="displayNum" onkeyup="searchNum" onkeypress="checkNumber(event)"/>
         <button onclick="numSearch()">Enter</button>
       </form>
     </div>
     <body>
       
     <!-- using unordered lists to list pokemon name and images in rows and coloumns-->
-    <div class="List">
     <ul>
       <li>
         <div class="horizontal">
@@ -148,7 +148,6 @@
         </div>
       </li>
     </ul>
-  </div>
 </body>
     <!-- reference links-->
     <div id="reference link">
