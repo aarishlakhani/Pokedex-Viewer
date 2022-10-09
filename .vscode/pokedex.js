@@ -139,8 +139,14 @@ const weatherType2 = [
   "N/A",
   "N/A",
 ];
-//name and number search bar code
 
+const searchName = () => {
+  let filter = document.getElementById("search1").value.toLowerCase;
+  let horizontal = document.getElementsByClassName("myHorizontal");
+  let vertical = horizontal.getElementsByClassName("vertical");
+};
+
+//name and number search bar code
 function nameSearch() {
   let pokemonName = document.getElementById("search1").value;
   let result = "";

@@ -7,7 +7,7 @@
     <meta name="author" content="" />
     <link rel="stylesheet" href="pokedex.css" />
   </head>
-  <body>
+  
     <!-- heading title-->
 
     <div class="heading">
@@ -17,136 +17,139 @@
 
     <!--adding a search bar for name and number-->
     <div="searchName">
-        <input type="text" id="search1" placeholder="Pokemon Name" />
+        <input type="text" id="search1" placeholder="Pokemon Name" onkeyup="searchName" onkeypress="checkName(event)"/>
         <button onclick="nameSearch()">Enter</button>
+
       <div="searchNumber">
-        <input type="number" id="search2" placeholder="Pokemon Number" />
+        <input type="number" id="search2" placeholder="Pokemon Number" class="displayNum" onkeyup="searchNum" onkeypress="checkNumber(event)"/>
         <button onclick="numSearch()">Enter</button>
       </form>
     </div>
-
+  
+      
     <!-- using unordered lists to list pokemon name and images in rows and coloumns-->
-    <ul>
+    <div class="pokemonlist">
+    <ul id =myYl>
       <li>
-        <div class="vertical">
-          <div class="horizontal">
-            <p>001 Bulbasaur</p>
+        <div class="horizontal">
+          <div class="vertical">
+            <h4>001</h4><p>Bulbasaur</p>
             <img src="pokemon/1.png" alt="Image of Bulbasaur" />
           </div>
 
-          <div class="horizontal">
-            <p>002 Ivysaur</p>
+          <div class="vertical">
+            <h4>002</h4><p>Ivysaur</p>
             <img src="pokemon/2.png" alt="Image of Ivysaur" />
           </div>
 
-          <div class="horizontal">
-            <p>003 Venusaur</p>
+          <div class="vertical">
+            <h4>003</h4><p>Venusaur</p>
             <img src="pokemon/3.png" alt="Image of Venusaur" />
           </div>
 
-          <div class="horizontal">
-            <p>004 Charmander</p>
+          <div class="vertical">
+            <h4>004</h4><p>Charmander</p>
             <img src="pokemon/4.png" alt="Image of Charmander" />
           </div>
         </div>
       </li>
 
       <li>
-        <div class="vertical">
-          <div class="horizontal">
-            <p>005 Charmeleon</p>
+        <div class="horizontal">
+          <div class="vertical">
+            <h4>005</h4><p>Charmeleon</p>
             <img src="pokemon/5.png" alt="Image of Charmeleon" />
           </div>
 
-          <div class="horizontal">
-            <p>006 Charizard</p>
+          <div class="vertical">
+            <h4>006</h4><p>Charizard</p>
             <img src="pokemon/6.png" alt="Image of Charizard" />
           </div>
 
-          <div class="horizontal">
-            <p>007 Squirtle</p>
+          <div class="vertical">
+            <h4>007</h4><p>Squirtle</p>
             <img src="pokemon/7.png" alt="Image of Squirtle" />
           </div>
 
-          <div class="horizontal">
-            <p>008 Wartortle</p>
+          <div class="vertical">
+            <h4>008</h4><p>Wartortle</p>
             <img src="pokemon/8.png" alt="Image of Wartortle" />
           </div>
         </div>
       </li>
 
       <li>
-        <div class="vertical">
-          <div class="horizontal">
-            <p>009 Blastoise</p>
+        <div class="horizontal">
+          <div class="vertical">
+            <h4>009</h4><p>Blastoise</p>
             <img src="pokemon/9.png" alt="Image of Blastoise" />
           </div>
-          <div class="horizontal">
-            <p>010 Caterpie</p>
+          <div class="vertical">
+            <h4>010</h4><p>Caterpie</p>
             <img src="pokemon/10.png" alt="Image of Caterpie" />
           </div>
 
-          <div class="horizontal">
-            <p>011 Metapod</p>
+          <div class="vertical">
+            <h4>011</h4><p>Metapod</p>
             <img src="pokemon/11.png" alt="Image of Metapod" />
           </div>
 
-          <div class="horizontal">
-            <p>012 Butterfree</p>
+          <div class="vertical">
+            <h4>012</h4><p>Butterfree</p>
             <img src="pokemon/12.png" alt="Image of Butterfree" />
           </div>
         </div>
       </li>
 
       <li>
-        <div class="vertical">
-          <div class="horizontal">
-            <p>013 Weedle</p>
+        <div class="horizontal">
+          <div class="vertical">
+            <h4>013</h4><p>Weedle</p>
             <img src="pokemon/13.png" alt="Image of Weedle" />
           </div>
 
-          <div class="horizontal">
-            <p>014 Kakuna</p>
+          <div class="vertical">
+            <h4>014</h4><p>Kakuna</p>
             <img src="pokemon/14.png" alt="Image of Kakuna" />
           </div>
 
-          <div class="horizontal">
-            <p>015 Beedrill</p>
+          <div class="vertical">
+            <h4>015</h4><p>Beedrill</p>
             <img src="pokemon/15.png" alt="Image of Beedrill" />
           </div>
 
-          <div class="horizontal">
-            <p>016 Pidgey</p>
+          <div class="vertical">
+            <h4>016</h4><p>Pidgey</p>
             <img src="pokemon/16.png" alt="Image of Pidgey" />
           </div>
         </div>
       </li>
 
       <li>
-        <div class="vertical">
-          <div class="horizontal">
-            <p>017 Pidgeotto</p>
+        <div class="horizontal">
+          <div class="vertical">
+            <h4>017</h4><p>Pidgeotto</p>
             <img src="pokemon/17.png" alt="Image of Pidgeotto" />
           </div>
 
-          <div class="horizontal">
-            <p>018 Pidgeot</p>
+          <div class="vertical">
+            <h4>018</h4><p>Pidgeot</p>
             <img src="pokemon/18.png" alt="Image of Pidgeot" />
           </div>
 
-          <div class="horizontal">
-            <p>019 Rattata</p>
+          <div class="vertical">
+            <h4>019</h4><p>Rattata</p>
             <img src="pokemon/19.png" alt="Image of Rattata" />
           </div>
 
-          <div class="horizontal">
-            <p>020 Raticate</p>
+          <div class="vertical">
+            <h4>020</h4><p>Raticate</p>
             <img src="pokemon/20.png" alt="Image of Raticate" />
           </div>
         </div>
       </li>
     </ul>
-
+  </div>
     <!-- reference links-->
     <div id="reference link">
       <p>References:</p>
@@ -163,5 +166,5 @@
     </div>
     <!-- Embedded JavaScript go here -->
     <script src="pokedex.js"></script>
-  </body>
+  
 </html>

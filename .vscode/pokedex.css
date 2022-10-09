@@ -12,19 +12,22 @@ ul {
 .heading {
   text-align: center;
 }
-/*Rearanging images side by side using Float*/
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+/*Rearanging images side by side using Flexbox*/
 .horizontal {
-  float: left;
-  width: 24%;
-  padding: 5px;
-  border: 1px solid black;
-  border-bottom: solid;
+  display: flex;
 }
 
-/* Clear floats after image containers */
-.vertical::after {
-  content: "";
-  clear: both;
-  display: table;
+.vertical {
+  flex: 25%;
+  padding: 4px;
+  border: 1px solid black;
+}
+
+p {
+  text-align: center;
+}
+
+h4 {
+  font-weight: normal;
+  text-align: center;
 }
