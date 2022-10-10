@@ -13,13 +13,11 @@ ul {
   text-align: center;
 }
 /*Rearanging images side by side using Flexbox*/
-.horizontal {
+.box {
   display: flex;
+  flex-wrap: wrap;
 }
-
-.vertical {
-  flex: 25%;
-  padding: 4px;
+.pokemonLi {
   border: 1px solid black;
 }
 
