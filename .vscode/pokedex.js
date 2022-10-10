@@ -140,11 +140,21 @@ const weatherType2 = [
   "N/A",
 ];
 
-const searchName = () => {
-  let filter = document.getElementById("search1").value.toLowerCase;
-  let horizontal = document.getElementsByClassName("myHorizontal");
-  let vertical = horizontal.getElementsByClassName("vertical");
-};
+const div = document.createElement("div");
+const ul = document.createElement("ul");
+div.id = "createDivision";
+ul.id = "listItems";
+
+var nodeList = document.querySelectorAll("li");
+alert(nodeList.length);
+
+function displayName() {
+  while (document.getElementById("listItems").firstChild) {
+    document
+      .getElementById("listItems")
+      .removeChild(document.getElementById("listItems").firstChild);
+  }
+}
 
 //name and number search bar code
 function nameSearch() {

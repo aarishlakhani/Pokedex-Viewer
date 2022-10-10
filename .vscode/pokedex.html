@@ -14,105 +14,102 @@
       <h1>SE 3316 Lab</h1>
       <h1>Aarish Lakhani's Pokedex</h1>
     </div>
-
+<body>
     <!--adding a search bar for name and number-->
-    <div="searchName">
-        <input type="text" id="search1" placeholder="Pokemon Name" onkeyup="searchName" onkeypress="checkName(event)"/>
+        <input type="text" onkeyup="displayName()" id="search1" placeholder="Pokemon Name"  >
         <button onclick="nameSearch()">Enter</button>
 
       <div="searchNumber">
-        <input type="number" id="search2" placeholder="Pokemon Number" class="displayNum" onkeyup="searchNum" onkeypress="checkNumber(event)"/>
+        <input type="number" id="search2" placeholder="Pokemon Number" class="displayNum" >
         <button onclick="numSearch()">Enter</button>
-      </form>
-    </div>
   
       
     <!-- using unordered lists to list pokemon name and images in rows and coloumns-->
-    <ul id="myUl" class="box"> <!--Using unordered list to contain pictures of Pokemon-->
-      <li class="pokemonLi" >
-        <h4>001</h4><p>Bulbasaur</p>
+    <ul id="union" class="box"> <!--Using unordered list to contain pictures of Pokemon-->
+      <li class="pokemonLi" id="1bulbasaur">
+        <p>Bulbasaur</p>
             <img src="pokemon/1.png" alt="Image of Bulbasaur" /> 
       </li>
 
-      <li class="pokemonLi" >
-        <h4>002</h4><p>Ivysaur</p>
+      <li class="pokemonLi" id="2Ivysaur">
+        <p>Ivysaur</p>
             <img src="pokemon/2.png" alt="Image of Ivysaur" />
       </li>
-      <li class="pokemonLi" >
-        <h4>003</h4><p>Venusaur</p>
+      <li class="pokemonLi" id="3Venusaur">
+        <p>Venusaur</p>
             <img src="pokemon/3.png" alt="Image of Venusaur" /> 
       </li>
-      <li class="pokemonLi" >
-        <h4>004</h4><p>Charmander</p>
+      <li class="pokemonLi" id="4Charmander" >
+        <p>Charmander</p>
             <img src="pokemon/4.png" alt="Image of Charmander" />
       </li>
-      <li class="pokemonLi" >
-        <h4>005</h4><p>Charmeleon</p>
+      <li class="pokemonLi" id="5Chameleon">
+        <p>Charmeleon</p>
             <img src="pokemon/5.png" alt="Image of Charmeleon" />
       </li>
-      <li class="pokemonLi" >
-        <h4>006</h4><p>Charizard</p>
+      <li class="pokemonLi" id="6Charizard">
+        <p>Charizard</p>
             <img src="pokemon/6.png" alt="Image of Charizard" />
       </li>
-      <li class="pokemonLi" >
-        <h4>007</h4><p>Squirtle</p>
+      <li class="pokemonLi" id-="7Squirtle">
+        <p>Squirtle</p>
             <img src="pokemon/7.png" alt="Image of Squirtle" /> 
       </li>
-      <li class="pokemonLi" >
-        <h4>008</h4><p>Wartortle</p>
+      <li class="pokemonLi" id="8Wartortle">
+       <p>Wartortle</p>
             <img src="pokemon/8.png" alt="Image of Wartortle" />
       </li>
-      <li class="pokemonLi" >
-        <h4>009</h4><p>Blastoise</p>
+      <li class="pokemonLi" id="9Blastoise">
+        <p>Blastoise</p>
             <img src="pokemon/9.png" alt="Image of Blastoise" /> 
       </li>
-      <li class="pokemonLi" >
-        <h4>010</h4><p>Caterpie</p>
+      <li class="pokemonLi" id="10Caterpie">
+        <p>Caterpie</p>
             <img src="pokemon/10.png" alt="Image of Caterpie" />
    <!--Using unordered list to contain pictures of Pokemon-->
-        <li class="pokemonLi" >
-          <h4>011</h4><p>Metapod</p>
+        <li class="pokemonLi" id="11Metapod">
+         <p>Metapod</p>
             <img src="pokemon/11.png" alt="Image of Metapod" />
         </li>
-      <li class="pokemonLi" >
-        <h4>012</h4><p>Butterfree</p>
+      <li class="pokemonLi" id="12Butterfree">
+        <p>Butterfree</p>
         <img src="pokemon/12.png" alt="Image of Butterfree" />
         </li>
-      <li class="pokemonLi" >
-        <h4>013</h4><p>Weedle</p>
+      <li class="pokemonLi" id="13Weedle">
+        <p>Weedle</p>
             <img src="pokemon/13.png" alt="Image of Weedle" /> 
       </li>
-      <li class="pokemonLi" >
-        <h4>014</h4><p>Kakuna</p>
+      <li class="pokemonLi" id="14kakuna">
+        <p>Kakuna</p>
             <img src="pokemon/14.png" alt="Image of Kakuna" />
       </li>
-      <li class="pokemonLi" >
-        <h4>015</h4><p>Beedrill</p>
+      <li class="pokemonLi" id="15Beedrill">
+       <p>Beedrill</p>
             <img src="pokemon/15.png" alt="Image of Beedrill" /> 
       </li>
-      <li class="pokemonLi" >
-        <h4>016</h4><p>Pidgey</p>
+      <li class="pokemonLi" id="16Pidgey">
+        <p>Pidgey</p>
             <img src="pokemon/16.png" alt="Image of Pidgey" />
       </li>
-      <li class="pokemonLi" >
-        <h4>017</h4><p>Pidgeotto</p>
+      <li class="pokemonLi" id="17Pidgeetto">
+        <p>Pidgeotto</p>
             <img src="pokemon/17.png" alt="Image of Pidgeotto" /> 
       </li>
-      <li class="pokemonLi" >
-        <h4>018</h4><p>Pidgeot</p>
+      <li class="pokemonLi" id="18Pidgeot">
+       <p>Pidgeot</p>
             <img src="pokemon/18.png" alt="Image of Pidgeot" />
       </li>
-      <li class="pokemonLi" >
-        <h4>019</h4><p>Rattata</p>
+      <li class="pokemonLi" id="19Rattata">
+       <p>Rattata</p>
         <img src="pokemon/19.png" alt="Image of Rattata" />
             </li>
-      <li class="pokemonLi" >
-        <h4>020</h4><p>Raticate</p>
+      <li class="pokemonLi" id="20Raticate">
+        <p>Raticate</p>
             <img src="pokemon/20.png" alt="Image of Raticate" />
       </li>
       </ul>
 
-   
+    </body>
 
 
 
