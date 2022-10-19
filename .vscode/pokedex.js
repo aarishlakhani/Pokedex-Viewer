@@ -43,8 +43,6 @@ const num = [
   "#018",
   "#019",
   "#020",
-  "#001",
-  "#001",
 ];
 const fastMove1 = [
   "",
@@ -143,16 +141,59 @@ const weatherType2 = [
 const div = document.createElement("div");
 const ul = document.createElement("ul");
 div.id = "createDivision";
-ul.id = "listItems";
+ul.id = "viewList";
+document.body.insertBefore(div, document.getElementById("union"));
+document.getElementById("createDivision").appendChild(ul);
 
 var nodeList = document.querySelectorAll("li");
-alert(nodeList.length);
 
 function displayName() {
-  while (document.getElementById("listItems").firstChild) {
+  while (document.getElementById("viewList").firstChild) {
     document
-      .getElementById("listItems")
-      .removeChild(document.getElementById("listItems").firstChild);
+      .getElementById("viewList")
+      .removeChild(document.getElementById("viewList").firstChild);
+  }
+
+  let nameOfPokemon = document.getElementById("search1").value;
+  for (let i = 0; i < nodeList.length; i++) {
+    if (
+      nodeList
+        .item(i)
+        .children.item(0)
+        .textContent.toLowerCase()
+        .includes(nameOfPokemon.toLowerCase()) &&
+      nameOfPokemon != ""
+    ) {
+      let listElement = nodeList.item(i).cloneNode(true);
+      document.getElementById("viewList").appendChild(listElement);
+    }
+  }
+}
+function displayNum() {
+  let name = "";
+  let pokemonId = document.getElementById("search2").value;
+  while (document.getElementById("viewList").firstChild) {
+    document
+      .getElementById("viewList")
+      .removeChild(document.getElementById("viewList").firstChild);
+  }
+  for (let i = 0; i < pokemon.length; i++) {
+    if (number[i].includes(pokemonId)) {
+      name = pokemon[i];
+      for (let i = 0; i < nodeList.length; i++) {
+        if (
+          nodeList
+            .item(i)
+            .children.item(0)
+            .textContent.toLowerCase()
+            .includes(name.toLowerCase()) &&
+          name != ""
+        ) {
+          let listElement = nodeList.item(i).cloneNode(true);
+          document.getElementById("viewList").appendChild(listElement);
+        }
+      }
+    }
   }
 }
 
