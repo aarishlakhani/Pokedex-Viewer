@@ -1,6 +1,6 @@
-# SE3316 Lab 1 - Pokedex Viewer
+# Pokedex Viewer
 
-This repository contains the codebase for **Lab 1 of SE3316**, a project focused on creating a static HTML-based Pokedex Viewer. The lab demonstrates skills in HTML, CSS, and JavaScript, as part of the Software Engineering curriculum at the University of Western Ontario.
+This repository contains the codebase for a project focused on creating a static HTML-based Pokedex Viewer. The lab demonstrates skills in HTML, CSS, and JavaScript, as part of the Software Engineering curriculum at the University of Western Ontario.
 
 ## Table of Contents
 - [Description](#description)
